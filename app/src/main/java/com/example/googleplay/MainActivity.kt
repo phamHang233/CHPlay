@@ -39,12 +39,14 @@ class MainActivity : AppCompatActivity() {
         horizontalRecyclerView1.layoutManager = layoutManager
         horizontalRecyclerView1.adapter = adapter
 
+        val layoutManager2 = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         val adapter2 = AppAdapter(appList2)
-        horizontalRecyclerView2.layoutManager = layoutManager
+        horizontalRecyclerView2.layoutManager = layoutManager2
         horizontalRecyclerView2.adapter = adapter2
 
+        val layoutManager3 = LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
         val adapter3 = AppAdapter(appList3)
-        horizontalRecyclerView3.layoutManager = layoutManager
+        horizontalRecyclerView3.layoutManager = layoutManager3
         horizontalRecyclerView3.adapter = adapter3
 
     }
